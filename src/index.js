@@ -17,3 +17,10 @@ const characterName = document.getElementById("name");
         form.reset();
       }
       console.log(votes);
+       // resets vote count to zero
+    const resetButton = document.getElementById("reset-btn");
+    resetButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      currentVotes.innerText = 0;
+    });
+  });
