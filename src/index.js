@@ -12,3 +12,8 @@ const characterName = document.getElementById("name");
     if (isNaN(votes) === false) {
         currentVotes.innerText = votes;
         // form.reset();  
+    } else {
+        alert("Votes can only be in numbers");
+        form.reset();
+      }
+      console.log(votes);
