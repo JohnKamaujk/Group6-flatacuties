@@ -7,3 +7,4 @@ const characterName = document.getElementById("name");
    // form for submitting votes ,sets votes input value to be displayed
    const form = document.getElementById("votes-form");
    form.addEventListener("submit", (e) => {
+    e.preventDefault();
