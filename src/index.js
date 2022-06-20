@@ -8,3 +8,5 @@ const characterName = document.getElementById("name");
    const form = document.getElementById("votes-form");
    form.addEventListener("submit", (e) => {
     e.preventDefault();
+    const votes = document.getElementById("votes").value;
+    if (isNaN(votes) === false) {
