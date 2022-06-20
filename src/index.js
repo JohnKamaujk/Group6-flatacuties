@@ -10,3 +10,5 @@ const characterName = document.getElementById("name");
     e.preventDefault();
     const votes = document.getElementById("votes").value;
     if (isNaN(votes) === false) {
+        currentVotes.innerText = votes;
+        // form.reset();  
