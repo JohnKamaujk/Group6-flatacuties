@@ -4,3 +4,4 @@ const characterName = document.getElementById("name");
   characterImage.src = character.image;
   const currentVotes = document.getElementById("vote-count");
   currentVotes.innerText = character.votes;
+   // form for submitting votes ,sets votes input value to be displayed
