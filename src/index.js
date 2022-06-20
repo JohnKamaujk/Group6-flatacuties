@@ -6,3 +6,4 @@ const characterName = document.getElementById("name");
   currentVotes.innerText = character.votes;
    // form for submitting votes ,sets votes input value to be displayed
    const form = document.getElementById("votes-form");
+   form.addEventListener("submit", (e) => {
