@@ -8,14 +8,12 @@ newCharacter.addEventListener("submit", (e) => {
   addedCharacter.innerText = newCharacterName;
   navBar.appendChild(addedCharacter);
   addedCharacter.addEventListener("click", () => {
-
-
-
-
-
-
-
-
-    
+    const newCharacterTitle = document.getElementById("name");
+    newCharacterTitle.innerText = newCharacterName;
+    const addCharacterImage = document.getElementById("image");
+    addCharacterImage.src = newCharacterImage;
+    const newCharactersCurrentVotes = document.getElementById("vote-count");
+    newCharactersCurrentVotes.innerText = 0;
+    const newCharacterCurrentVotes = document.getElementById("vote-count");
   });
 });
