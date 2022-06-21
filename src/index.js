@@ -13,4 +13,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
             characterView.style.cursor = "pointer";
             characterView.addEventListener("click", (e) => {
               // e.preventDefault();
-              
+            })
+        });
+      });
+  }
+  getCharacterDetails();
+});
