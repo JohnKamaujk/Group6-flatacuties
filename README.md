@@ -1,11 +1,10 @@
 # Flatacuties
 
-Today you'll be building an app for voting for the cutest animal! You will be
-using a local API and building out the frontend for our app, Flatacuties.
+An app for voting for the cutest animal! Using a local API and building out the frontend for our app, Flatacuties.
 
 ## Demo
 
-Use this gif as an example of how the app should work.
+This gif is an example of how the app should work.
 
 ![Demo](assets/demo.gif)
 
@@ -25,7 +24,7 @@ Test your server by visiting this route in the browser:
 
 Then, open the `index.html` file on your browser to run the application.
 
-Write your code in the `src/index.js` file. The base URL for your API will be
+The base URL for your API will be
 [http://localhost:3000](http://localhost:3000).
 
 ## Deliverables
