@@ -6,4 +6,5 @@ newCharacter.addEventListener("submit", (e) => {
   const addedCharacter = document.createElement("span");
   addedCharacter.style.cursor = "pointer";
   addedCharacter.innerText = newCharacterName;
+  navBar.appendChild(addedCharacter);
 });
