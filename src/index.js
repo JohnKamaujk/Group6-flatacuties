@@ -10,3 +10,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             navBar.appendChild(characterView);
             characterView.id = character.id;
             characterView.innerText = character.name;
+            characterView.style.cursor = "pointer";
+            characterView.addEventListener("click", (e) => {
+              // e.preventDefault();
+              
