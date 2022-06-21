@@ -33,6 +33,20 @@ newCharacter.addEventListener("submit", (e) => {
       e.preventDefault();
       newCharacterCurrentVotes.innerText = 0;
     });
+    function updateNewCharacter() {
+      return fetch("http://localhost:3000/characters", {
+        method: "POST",
+        headers: {
+          "content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: newCharacterName,
+          image: newCharacterImage,
+          votes: 0,
+        }),
+      });
+    }
+    updateNewCharacter();
   });
-
 });
