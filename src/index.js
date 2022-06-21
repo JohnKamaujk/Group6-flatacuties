@@ -1,3 +1,4 @@
+// Adding a new character using POST
 const newCharacter = document.getElementById("character-form");
 newCharacter.addEventListener("submit", (e) => {
   e.preventDefault();
