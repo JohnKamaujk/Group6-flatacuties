@@ -8,3 +8,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
           characters.forEach((character) => {
             const characterView = document.createElement("span");
             navBar.appendChild(characterView);
+            characterView.id = character.id;
+            characterView.innerText = character.name;
