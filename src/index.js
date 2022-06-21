@@ -7,4 +7,15 @@ newCharacter.addEventListener("submit", (e) => {
   addedCharacter.style.cursor = "pointer";
   addedCharacter.innerText = newCharacterName;
   navBar.appendChild(addedCharacter);
+  addedCharacter.addEventListener("click", () => {
+
+
+
+
+
+
+
+
+    
+  });
 });
