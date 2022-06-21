@@ -28,5 +28,11 @@ newCharacter.addEventListener("submit", (e) => {
         form.reset();
       }
     });
+    const reset = document.getElementById("reset-btn");
+    reset.addEventListener("click", (e) => {
+      e.preventDefault();
+      newCharacterCurrentVotes.innerText = 0;
+    });
   });
+
 });
