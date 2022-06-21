@@ -15,5 +15,18 @@ newCharacter.addEventListener("submit", (e) => {
     const newCharactersCurrentVotes = document.getElementById("vote-count");
     newCharactersCurrentVotes.innerText = 0;
     const newCharacterCurrentVotes = document.getElementById("vote-count");
+    newCharacterCurrentVotes.innerText = 0;
+    const form = document.getElementById("votes-form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const votes = document.getElementById("votes").value;
+      if (isNaN(votes) === false) {
+        newCharacterCurrentVotes.innerText = votes;
+        form.reset();
+      } else {
+        alert("Votes can only be in numbers");
+        form.reset();
+      }
+    });
   });
 });
